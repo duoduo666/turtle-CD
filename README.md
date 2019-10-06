@@ -1,3 +1,3 @@
 # turtle-CD
-sui turtle modle. 
-add about 500 + modle and 100 + object on triditional turtle 
+Sui Turtle Modle. 
+ADD 500 + Modles and 100 + Objects on triditional Turtle 
