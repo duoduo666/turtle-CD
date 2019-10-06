@@ -1,0 +1,51 @@
+import turtle
+def p_max_square():
+    for i in range(90):
+        turtle.right(1)
+        for i in range(4):
+            turtle.forward(100)
+            turtle.left(90)
+
+#最终函数开始
+def p_tri_squ_pen_hex():
+    color=["red","blue","purple","brown","black","yellow","green"]
+    for i in range(4):
+        for i in range(5):
+            turtle.pencolor(color[i])
+            turtle.forward(50)
+            hex_left()
+        turtle.right(60)
+    turtle.penup()
+    hex_left()
+    turtle.forward(50)
+    turtle.left(60)
+    moveon100()
+    moveon100()
+    moveon50()
+    turtle.right(90)
+    moveon50()
+    turtle.right(60)
+    turtle.pendown()
+    for x in range(4):
+        for j in range(3):
+            turtle.pencolor(color[j])
+            big_tri_50_100_200()
+            turtle.right(60)
+        turtle.left(60)
+        moveback100()
+        moveon100()
+        turnright()
+        for k in range(3):
+            turtle.pencolor(color[k])
+            whole_hex_50()
+            turtle.right(60)
+            moveon50()
+        moveon100()
+        whole_hex_50()
+        moveon50()
+        turtle.pencolor("green")
+        turtle.right(30)
+        p_max_square()
+        moveback100()
+        moveon100()
+        turtle.right(60)

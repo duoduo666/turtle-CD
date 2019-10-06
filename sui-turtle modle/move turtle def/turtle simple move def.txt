@@ -1,0 +1,35 @@
+import turtle
+
+#移动
+
+#移动（50）
+def moveon50():
+    turtle.forward(50)
+
+def moveback50():
+    turtle.right(180)
+    turtle.forward(50)
+
+def moveleft50():
+    turtle.right(270)
+    turtle.forward(50)    
+
+def moveleft50():
+    turtle.right(270)
+    turtle.forward(50)
+    
+#移动（100）
+def moveon100():
+    turtle.forward(100)
+
+def moveback100():
+    turtle.right(180)
+    turtle.forward(100)
+
+def moveleft100():
+    turtle.right(270)
+    turtle.forward(100)    
+
+def moveleft100():
+    turtle.right(270)
+    turtle.forward(100)

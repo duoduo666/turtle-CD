@@ -1,0 +1,37 @@
+import turtle
+
+#转向
+
+#转向（矩形）
+def turnleft():
+    turtle.left(90)
+
+def turnright():
+    turtle.right(90)
+
+#一个整的方形
+def whole_spuare_50():
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(50)
+    
+#三个合并的方形
+def big_square_50_100_200():
+    big_square_x = 0
+    while big_square_x <= 2:
+        turtle.forward(50)
+        turtle.right(90)
+        big_square_x += 1
+    while big_square_x > 2 and big_square_x <= 6:
+        turtle.forward(100)
+        turtle.right(90)
+        big_square_x += 1
+    while big_square_x > 6 and big_square_x <= 9:
+        turtle.forward(200)
+        turtle.right(90)
+        big_square_x += 1
+    turtle.forward(200)

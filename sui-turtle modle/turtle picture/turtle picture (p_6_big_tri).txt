@@ -1,0 +1,10 @@
+import turtle
+
+def p_6_big_tri():
+    x = 0
+    colours = ["red","blue","green","brown","black","purple"] 
+    while x < 6:
+        turtle.pencolor(colours[x])
+        turtle.left(60)
+        big_tri_50_100_200()
+        x += 1

@@ -1,0 +1,32 @@
+import turtle
+
+#转向（正五边形）
+def pen_left():
+    turtle.left(72)
+
+def pen_right():
+    turtle.right(72)
+
+#整个五边形
+def whole_pen_50():
+    penx = 0
+    while penx < 5:
+        turtle.forward(50)
+        pen_left()
+        penx += 1
+
+#三个五边形合并
+def big_pen_50_100_200():
+    big_pen_x = 0
+    while big_pen_x <= 5:
+        turtle.right(72)
+        turtle.forward(50)
+        big_pen_x += 1
+    while big_pen_x > 5 and big_pen_x <= 10:
+        turtle.right(72)
+        turtle.forward(100)
+        big_pen_x += 1
+    while big_pen_x > 10 and big_pen_x <= 15:
+        turtle.right(72)
+        turtle.forward(200)
+        big_pen_x += 1

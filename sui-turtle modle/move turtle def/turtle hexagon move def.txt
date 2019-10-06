@@ -1,0 +1,32 @@
+import turtle
+
+#六边形转向
+def hex_left():
+    turtle.left(60)
+
+def hex_right():
+    turtle.right(60)
+
+#整个六边形
+def whole_hex_50():
+    hexx = 0
+    while hexx < 5:
+        turtle.forward(50)
+        hex_left()
+        hexx += 1
+
+#三个六边形合并
+def big_hex_50_100_200():
+    big_hex_x = 0
+    while big_hex_x <= 6:
+        turtle.right(60)
+        turtle.forward(50)
+        big_hex_x += 1
+    while big_hex_x > 6 and big_hex_x <= 12:
+        turtle.right(60)
+        turtle.forward(100)
+        big_hex_x += 1
+    while big_hex_x > 12 and big_hex_x <= 18:
+        turtle.right(60)
+        turtle.forward(200)
+        big_hex_x += 1
